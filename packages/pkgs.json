@@ -1,0 +1,22 @@
+[
+ {
+  "path": "/packages/tools/EasyFlash", 
+  "ver": "v4.1.0", 
+  "name": "EASYFLASH"
+ }, 
+ {
+  "path": "/packages/system/fal", 
+  "ver": "v0.5.0", 
+  "name": "FAL"
+ }, 
+ {
+  "path": "/packages/system/sys_load_monitor", 
+  "ver": "v1.0.0", 
+  "name": "SYS_LOAD_MONITOR"
+ }, 
+ {
+  "path": "/packages/peripherals/touch/gt9147", 
+  "ver": "latest", 
+  "name": "GT9147"
+ }
+]
