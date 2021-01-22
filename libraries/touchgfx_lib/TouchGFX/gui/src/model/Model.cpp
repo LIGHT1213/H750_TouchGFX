@@ -9,7 +9,7 @@ Model::Model() : modelListener(0)
 void Model::tick()
 {
     static int i;
-    i=i+2;
+    i=i+1;
     modelListener->UpDateHeartRateLine(i);
     modelListener->UpDateHeartNum(i);
     modelListener->UpDateTemNum(i);

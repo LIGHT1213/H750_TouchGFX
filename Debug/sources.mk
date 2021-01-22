@@ -67,6 +67,7 @@ libraries/touchgfx_lib/TouchGFX/gui/src/main_screen \
 libraries/touchgfx_lib/TouchGFX/gui/src/model \
 libraries/touchgfx_lib/TouchGFX/target \
 libraries/touchgfx_lib/TouchGFX/target/generated \
+model/net \
 packages/EasyFlash-v4.1.0/src \
 packages/fal-v0.5.0/samples/porting \
 packages/fal-v0.5.0/src \

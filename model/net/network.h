@@ -3,4 +3,5 @@
 #include <rtthread.h>
 #include <rtdevice.h>
 void tcp_client_thread_entry(void *args);
+void udpserv(void *args);
 #endif

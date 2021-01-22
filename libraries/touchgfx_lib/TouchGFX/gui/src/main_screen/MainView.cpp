@@ -21,7 +21,11 @@ void MainView::tearDownScreen()
 }
 void MainView::UpDateHeartNum(int i)
 {
-    HeartRateNum.setValue(i);
+    float Temp=0.01f+i+0.1*i;
+    HeartRateNum.setValue(Temp);
+    Unicode::snprintfFloat(HeartRateTextBuffer,HEARTRATETEXT_SIZE,"%3.1f",float(Temp) );
+    HeartRateText.setWildcard(HeartRateTextBuffer);
+    HeartRateText.invalidate();
 }
 void MainView::UpDateTemNum(int i)
 {
@@ -29,16 +33,8 @@ void MainView::UpDateTemNum(int i)
 
     float Temp=0.01f+i+0.1*i;
     TemNum.setValue(Temp);
-//  if(Temp>38)
-//  {
-//      TemNumText.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 0, 0));
-//  }
-//  else
-//  {
-//      TemNumText.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-//  }
-    Unicode::snprintfFloat(HeartRateTextBuffer,HEARTRATETEXT_SIZE,"%3.1f",float(Temp) );
-    TemNumText.setWildcard(HeartRateTextBuffer);
-//    TemNumText.invalidate();
+    Unicode::snprintfFloat(TemNumTextBuffer,TEMNUMTEXT_SIZE,"%3.1f",float(Temp) );
+    TemNumText.setWildcard(TemNumTextBuffer);
+    TemNumText.invalidate();
 
 }

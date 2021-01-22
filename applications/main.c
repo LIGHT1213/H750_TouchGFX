@@ -12,6 +12,7 @@
 #include <rtdevice.h>
 #include "drv_common.h"
 #include "network.h"
+#define UDP_MODE
 #define LED_PIN GET_PIN(I, 8)
 #define LED_R_PIN GET_PIN(C,15)
 extern void wlan_autoconnect_init(void);
@@ -28,9 +29,10 @@ int main(void)
     rt_wlan_config_autoreconnect(RT_TRUE);
     while(rt_wlan_is_ready()==RT_FALSE)
     {
-        rt_kprintf("wait wifi connect\r\n");
+        rt_kprintf("wait wifi connect and dhcp server\r\n");
         rt_thread_delay(1000);
     }
+#ifdef TCP_MODE
     rt_thread_t uart_thread = rt_thread_create("tcp_client", tcp_client_thread_entry, RT_NULL, 4*1024, 25, 10);
     if (uart_thread != NULL)
     {
@@ -40,6 +42,17 @@ int main(void)
         //ret = RT_ERROR;
         rt_kprintf("create tcp client error!!!");
     }
+#endif
+#ifdef UDP_MODE
+    rt_thread_t uart_thread = rt_thread_create("udp_client", udpserv, RT_NULL, 4*1024, 25, 10);
+    if (uart_thread != NULL)
+    {
+        rt_thread_startup(uart_thread);
+    }else
+    {
+        rt_kprintf("create udp client error!!!");
+    }
+#endif
     rt_pin_write(LED_R_PIN,PIN_HIGH);
     while(count++)
     {

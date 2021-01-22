@@ -68,18 +68,21 @@ MainViewBase::MainViewBase() :
     textArea3.setLinespacing(0);
     textArea3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID5));
 
-    TemNumText.setXY(76, 208);
+    TemNumText.setXY(100, 208);
     TemNumText.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     TemNumText.setLinespacing(0);
+    Unicode::snprintf(TemNumTextBuffer, TEMNUMTEXT_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID11).getText());
+    TemNumText.setWildcard(TemNumTextBuffer);
+    TemNumText.resizeToCurrentText();
     TemNumText.setTypedText(touchgfx::TypedText(T_SINGLEUSEID3));
 
-    HeartRateText.setXY(339, 208);
+    HeartRateText.setXY(335, 208);
     HeartRateText.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     HeartRateText.setLinespacing(0);
-    Unicode::snprintf(HeartRateTextBuffer, HEARTRATETEXT_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID9).getText());
+    Unicode::snprintf(HeartRateTextBuffer, HEARTRATETEXT_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID13).getText());
     HeartRateText.setWildcard(HeartRateTextBuffer);
     HeartRateText.resizeToCurrentText();
-    HeartRateText.setTypedText(touchgfx::TypedText(T_SINGLEUSEID8));
+    HeartRateText.setTypedText(touchgfx::TypedText(T_SINGLEUSEID12));
 
     add(__background);
     add(container1);

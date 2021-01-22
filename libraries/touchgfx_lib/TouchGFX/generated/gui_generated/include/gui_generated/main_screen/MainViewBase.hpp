@@ -47,7 +47,9 @@ protected:
     /*
      * Wildcard Buffers
      */
-    static const uint16_t HEARTRATETEXT_SIZE = 4;
+    static const uint16_t TEMNUMTEXT_SIZE = 5;
+    touchgfx::Unicode::UnicodeChar TemNumTextBuffer[TEMNUMTEXT_SIZE];
+    static const uint16_t HEARTRATETEXT_SIZE = 5;
     touchgfx::Unicode::UnicodeChar HeartRateTextBuffer[HEARTRATETEXT_SIZE];
 
 private:

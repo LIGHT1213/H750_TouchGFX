@@ -49,6 +49,7 @@ RM := rm -rf
 -include packages/fal-v0.5.0/src/subdir.mk
 -include packages/fal-v0.5.0/samples/porting/subdir.mk
 -include packages/EasyFlash-v4.1.0/src/subdir.mk
+-include model/net/subdir.mk
 -include libraries/touchgfx_lib/TouchGFX/target/generated/subdir.mk
 -include libraries/touchgfx_lib/TouchGFX/target/subdir.mk
 -include libraries/touchgfx_lib/TouchGFX/gui/src/model/subdir.mk
