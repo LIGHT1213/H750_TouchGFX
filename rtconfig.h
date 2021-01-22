@@ -177,7 +177,7 @@
 
 #define SAL_USING_LWIP
 /* end of protocol stack implement */
-#define SAL_SOCKETS_NUM 16
+#define SAL_USING_POSIX
 /* end of Socket abstraction layer */
 
 /* Network interface device */
@@ -319,6 +319,8 @@
 /* Micrium: Micrium software products porting for RT-Thread */
 
 /* end of Micrium: Micrium software products porting for RT-Thread */
+#define PKG_USING_RT_PRINTF
+#define PKG_USING_RT_PRINTF_LATEST_VERSION
 /* end of system packages */
 
 /* peripheral libraries and drivers */

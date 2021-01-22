@@ -71,6 +71,7 @@ packages/EasyFlash-v4.1.0/src \
 packages/fal-v0.5.0/samples/porting \
 packages/fal-v0.5.0/src \
 packages/gt9147-latest/src \
+packages/rt_printf-latest \
 packages/sys_load_monitor-v1.0.0 \
 rt-thread/components/cplusplus \
 rt-thread/components/dfs/filesystems/devfs \
@@ -99,6 +100,7 @@ rt-thread/components/net/lwip-2.0.2/src/core \
 rt-thread/components/net/lwip-2.0.2/src/core/ipv4 \
 rt-thread/components/net/lwip-2.0.2/src/netif \
 rt-thread/components/net/netdev/src \
+rt-thread/components/net/sal_socket/dfs_net \
 rt-thread/components/net/sal_socket/impl \
 rt-thread/components/net/sal_socket/socket \
 rt-thread/components/net/sal_socket/src \

@@ -15,6 +15,7 @@ RM := rm -rf
 -include rt-thread/components/net/sal_socket/src/subdir.mk
 -include rt-thread/components/net/sal_socket/socket/subdir.mk
 -include rt-thread/components/net/sal_socket/impl/subdir.mk
+-include rt-thread/components/net/sal_socket/dfs_net/subdir.mk
 -include rt-thread/components/net/netdev/src/subdir.mk
 -include rt-thread/components/net/lwip-2.0.2/src/netif/subdir.mk
 -include rt-thread/components/net/lwip-2.0.2/src/core/ipv4/subdir.mk
@@ -43,6 +44,7 @@ RM := rm -rf
 -include rt-thread/components/dfs/filesystems/devfs/subdir.mk
 -include rt-thread/components/cplusplus/subdir.mk
 -include packages/sys_load_monitor-v1.0.0/subdir.mk
+-include packages/rt_printf-latest/subdir.mk
 -include packages/gt9147-latest/src/subdir.mk
 -include packages/fal-v0.5.0/src/subdir.mk
 -include packages/fal-v0.5.0/samples/porting/subdir.mk

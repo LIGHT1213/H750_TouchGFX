@@ -15,6 +15,11 @@
   "name": "SYS_LOAD_MONITOR"
  }, 
  {
+  "path": "/packages/system/rt_printf", 
+  "ver": "latest", 
+  "name": "RT_PRINTF"
+ }, 
+ {
   "path": "/packages/peripherals/touch/gt9147", 
   "ver": "latest", 
   "name": "GT9147"

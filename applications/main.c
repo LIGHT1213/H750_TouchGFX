@@ -11,15 +11,36 @@
 #include <rtthread.h>
 #include <rtdevice.h>
 #include "drv_common.h"
-
+#include "network.h"
 #define LED_PIN GET_PIN(I, 8)
-int rt_hw_gt9147_port(void);
+#define LED_R_PIN GET_PIN(C,15)
+extern void wlan_autoconnect_init(void);
 int main(void)
 {
     rt_uint32_t count = 1;
-
+    rt_pin_mode(LED_R_PIN, PIN_MODE_OUTPUT);
     rt_pin_mode(LED_PIN, PIN_MODE_OUTPUT);
-
+    rt_pin_write(LED_PIN, PIN_HIGH);
+    rt_pin_write(LED_R_PIN,PIN_LOW);
+    /* init Wi-Fi auto connect feature */
+    wlan_autoconnect_init();
+    /* enable auto reconnect on WLAN device */
+    rt_wlan_config_autoreconnect(RT_TRUE);
+    while(rt_wlan_is_ready()==RT_FALSE)
+    {
+        rt_kprintf("wait wifi connect\r\n");
+        rt_thread_delay(1000);
+    }
+    rt_thread_t uart_thread = rt_thread_create("tcp_client", tcp_client_thread_entry, RT_NULL, 4*1024, 25, 10);
+    if (uart_thread != NULL)
+    {
+        rt_thread_startup(uart_thread);
+    }else
+    {
+        //ret = RT_ERROR;
+        rt_kprintf("create tcp client error!!!");
+    }
+    rt_pin_write(LED_R_PIN,PIN_HIGH);
     while(count++)
     {
         rt_thread_mdelay(500);
@@ -29,22 +50,6 @@ int main(void)
     }
     return RT_EOK;
 }
-//int rt_hw_gt9147_port(void)
-//{
-//    struct rt_touch_config config;
-//    rt_uint8_t rst;
-//
-//    rst = GT9147_RST_PIN;
-//    config.dev_name = "i2c1";
-//    config.irq_pin.pin  = GT9147_IRQ_PIN;
-//    config.irq_pin.mode = PIN_MODE_INPUT_PULLDOWN;
-//    config.user_data = &rst;
-//
-//    rt_hw_gt9147_init("gt", &config);
-//
-//    return 0;
-//}
-//INIT_ENV_EXPORT(rt_hw_gt9147_port);
 #include "stm32h7xx.h"
 static int vtor_config(void)
 {
