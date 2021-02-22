@@ -7,12 +7,12 @@
  * Date           Author       Notes
  * 2020-09-02     RT-Thread    first version
  */
-
+#define UDP_MODE
+//#define TCP_MODE 1
 #include <rtthread.h>
 #include <rtdevice.h>
 #include "drv_common.h"
 #include "network.h"
-#define UDP_MODE
 #define LED_PIN GET_PIN(I, 8)
 #define LED_R_PIN GET_PIN(C,15)
 extern void wlan_autoconnect_init(void);

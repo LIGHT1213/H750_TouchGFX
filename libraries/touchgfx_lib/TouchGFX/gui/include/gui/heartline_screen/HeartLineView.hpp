@@ -13,6 +13,7 @@ public:
     virtual void tearDownScreen();
     void UpDateHeartRateLine(int i);
 protected:
+    void handleTickEvent();
 };
 
 #endif // HEARTLINEVIEW_HPP

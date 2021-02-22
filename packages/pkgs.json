@@ -1,5 +1,10 @@
 [
  {
+  "path": "/packages/iot/netutils", 
+  "ver": "v1.2.0", 
+  "name": "NETUTILS"
+ }, 
+ {
   "path": "/packages/tools/EasyFlash", 
   "ver": "v4.1.0", 
   "name": "EASYFLASH"

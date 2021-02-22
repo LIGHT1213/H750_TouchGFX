@@ -45,6 +45,7 @@ RM := rm -rf
 -include rt-thread/components/cplusplus/subdir.mk
 -include packages/sys_load_monitor-v1.0.0/subdir.mk
 -include packages/rt_printf-latest/subdir.mk
+-include packages/netutils-v1.2.0/iperf/subdir.mk
 -include packages/gt9147-latest/src/subdir.mk
 -include packages/fal-v0.5.0/src/subdir.mk
 -include packages/fal-v0.5.0/samples/porting/subdir.mk

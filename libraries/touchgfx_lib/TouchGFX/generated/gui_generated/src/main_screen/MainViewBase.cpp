@@ -59,14 +59,9 @@ MainViewBase::MainViewBase() :
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
 
-    button1.setXY(155, 18);
-    button1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_SMALL_PRESSED_ID));
+    button1.setXY(210, 17);
+    button1.setBitmaps(touchgfx::Bitmap(BITMAP_H4_ID), touchgfx::Bitmap(BITMAP_H4_ID));
     button1.setAction(buttonCallback);
-
-    textArea3.setXY(197, 34);
-    textArea3.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    textArea3.setLinespacing(0);
-    textArea3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID5));
 
     TemNumText.setXY(100, 208);
     TemNumText.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
@@ -89,7 +84,6 @@ MainViewBase::MainViewBase() :
     add(textArea1);
     add(textArea2);
     add(button1);
-    add(textArea3);
     add(TemNumText);
     add(HeartRateText);
 }

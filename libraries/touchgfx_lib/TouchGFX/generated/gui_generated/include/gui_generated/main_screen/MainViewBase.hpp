@@ -40,7 +40,6 @@ protected:
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea2;
     touchgfx::Button button1;
-    touchgfx::TextArea textArea3;
     touchgfx::TextAreaWithOneWildcard TemNumText;
     touchgfx::TextAreaWithOneWildcard HeartRateText;
 

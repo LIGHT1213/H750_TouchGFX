@@ -13,6 +13,8 @@ public:
     virtual void tearDownScreen();
     void UpDateHeartNum(int i);
     void UpDateTemNum(int i);
+protected:
+    void handleTickEvent();
 };
 
 #endif // MAINVIEW_HPP

@@ -72,6 +72,7 @@ packages/EasyFlash-v4.1.0/src \
 packages/fal-v0.5.0/samples/porting \
 packages/fal-v0.5.0/src \
 packages/gt9147-latest/src \
+packages/netutils-v1.2.0/iperf \
 packages/rt_printf-latest \
 packages/sys_load_monitor-v1.0.0 \
 rt-thread/components/cplusplus \

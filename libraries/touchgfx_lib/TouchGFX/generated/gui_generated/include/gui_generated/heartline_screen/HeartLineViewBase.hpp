@@ -39,7 +39,6 @@ protected:
     touchgfx::PainterRGB565 HeartRateLineLine1Painter;
     touchgfx::TextArea textArea1;
     touchgfx::Button button1;
-    touchgfx::TextArea textArea2;
     touchgfx::Slider slider1;
 
 private:

@@ -111,7 +111,6 @@ void touchgfx_thread_entry(void *parameter)
 	MX_TouchGFX_Process();
 	for(;;)
 	{
-
 	    rt_thread_mdelay(30);
 	}
 }
@@ -120,7 +119,7 @@ int TouchGFXTask(void)
 	rt_thread_t tid = NULL;
 	tid = rt_thread_create("TouchGFX",
 							touchgfx_thread_entry, RT_NULL,
-							8192, 15, 20);
+							8192, 5, 30);
 	
    if (tid != RT_NULL)
         rt_thread_startup(tid);

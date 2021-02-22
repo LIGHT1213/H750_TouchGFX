@@ -266,6 +266,9 @@
 
 /* end of Wiced WiFi */
 /* end of Wi-Fi */
+#define PKG_USING_NETUTILS
+#define PKG_NETUTILS_IPERF
+#define PKG_USING_NETUTILS_V120
 
 /* IoT Cloud */
 
