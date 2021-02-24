@@ -4,7 +4,7 @@ extern char *recv_data;
 extern uint8_t NetRecFlag;
 extern int stepNum;
 extern int ecgNum;
-extern int tempNum;
+extern float tempNum;
 extern int heartNum;
 HeartLineView::HeartLineView()
 {
@@ -23,7 +23,6 @@ void HeartLineView::tearDownScreen()
 void HeartLineView::UpDateHeartRateLine(int i)
 {
     HeartRateLine.addDataPoint(i);
-    HeartRateLine.setGraphRangeY(0,10*slider1.getValue());
 }
 void HeartLineView::handleTickEvent()
 {

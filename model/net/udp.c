@@ -18,7 +18,7 @@
 #define BUFSZ   1024
 int stepNum;
 int ecgNum;
-int tempNum;
+float tempNum;
 int heartNum;
 char *recv_data;
 uint8_t NetRecFlag=0;
@@ -43,6 +43,7 @@ static void DataProcess(void)
     ecgNum=(recv_data[3]<<8)+recv_data[2];
     heartNum=recv_data[4];
     tempNum=(recv_data[6]<<8)+recv_data[5];
+    tempNum/=10.0;
 }
 void udpserv(void *args)
 {

@@ -6,7 +6,7 @@ extern char *recv_data;
 extern uint8_t NetRecFlag;
 extern int stepNum;
 extern int ecgNum;
-extern int tempNum;
+extern float tempNum;
 extern int heartNum;
 MainView::MainView()
 {
@@ -33,7 +33,7 @@ void MainView::UpDateHeartNum(int i)
     HeartRateText.setWildcard(HeartRateTextBuffer);
     HeartRateText.invalidate();
 }
-void MainView::UpDateTemNum(int i)
+void MainView::UpDateTemNum(float i)
 {
     //char  buffer[20];
 
@@ -49,7 +49,7 @@ void MainView::handleTickEvent()
     if(NetRecFlag==1)
     {
         MainView::UpDateHeartNum((int)heartNum);
-        MainView::UpDateTemNum((int)tempNum);
+        MainView::UpDateTemNum(tempNum);
 //    modelListener->UpDateHeartRateLine((int)recv_data[0]);
 //    modelListener->UpDateHeartNum((int)recv_data[0]);
 //    modelListener->UpDateTemNum((int)recv_data[0]);

@@ -12,7 +12,7 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     void UpDateHeartNum(int i);
-    void UpDateTemNum(int i);
+    void UpDateTemNum(float i);
 protected:
     void handleTickEvent();
 };
