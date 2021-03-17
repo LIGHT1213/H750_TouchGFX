@@ -11,9 +11,9 @@
 #include <touchgfx/containers/CacheableContainer.hpp>
 #include <touchgfx/containers/progress_indicators/CircleProgress.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565Bitmap.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/widgets/Button.hpp>
-#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -37,15 +37,19 @@ protected:
     touchgfx::PainterRGB565Bitmap TemNumPainter;
     touchgfx::CircleProgress HeartRateNum;
     touchgfx::PainterRGB565Bitmap HeartRateNumPainter;
+    touchgfx::TextAreaWithOneWildcard stepNum;
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea2;
     touchgfx::Button button1;
     touchgfx::TextAreaWithOneWildcard TemNumText;
     touchgfx::TextAreaWithOneWildcard HeartRateText;
+    touchgfx::TextArea testArea3;
 
     /*
      * Wildcard Buffers
      */
+    static const uint16_t STEPNUM_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar stepNumBuffer[STEPNUM_SIZE];
     static const uint16_t TEMNUMTEXT_SIZE = 5;
     touchgfx::Unicode::UnicodeChar TemNumTextBuffer[TEMNUMTEXT_SIZE];
     static const uint16_t HEARTRATETEXT_SIZE = 5;

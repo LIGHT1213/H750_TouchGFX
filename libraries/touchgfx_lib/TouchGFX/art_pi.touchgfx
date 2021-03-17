@@ -101,6 +101,35 @@
                 "Clickable": false,
                 "Fadeable": false,
                 "Moveable": false
+              },
+              {
+                "Type": "TextArea",
+                "TextId": "SingleUseId15",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Wildcard1": {
+                  "TextId": "SingleUseId16",
+                  "UseBuffer": true,
+                  "BufferSize": 10
+                },
+                "Name": "stepNum",
+                "X": 249,
+                "Y": 221,
+                "Width": 10,
+                "Height": 27,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
               }
             ],
             "Type": "Container",
@@ -232,6 +261,30 @@
             "X": 335,
             "Y": 208,
             "Width": 33,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId14",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "testArea3",
+            "X": 190,
+            "Y": 221,
+            "Width": 40,
             "Height": 27,
             "Visible": true,
             "LockPosition": false,
@@ -466,6 +519,18 @@
       },
       {
         "TextEntryId": "SingleUseId13",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId16",
         "IsResource": false
       }
     ],

@@ -19,8 +19,10 @@ KEEP extern const touchgfx::GlyphNode glyphs_STSONG_TTF_20_4bpp[] FONT_TABLE_LOC
     {   578, 0x003F,   7,  13,  13,   0,   7,   0,   0, 0x00 },
     {     0, 0x4F53,  20,  19,  16,   0,  20,   0,   0, 0x00 },
     {     0, 0x5FC3,  20,  18,  15,   0,  20,   0,   0, 0x00 },
-    {     0, 0x66F2,  16,  19,  16,   2,  20,   0,   0, 0x00 },
-    {     0, 0x6E29,  18,  18,  15,   1,  20,   0,   0, 0x00 },
+    {     0, 0x6570,  20,  20,  16,   0,  20,   0,   0, 0x00 },
+    {   200, 0x66F2,  16,  19,  16,   2,  20,   0,   0, 0x00 },
+    {     0, 0x6B65,  19,  19,  16,   0,  20,   0,   0, 0x00 },
+    {   190, 0x6E29,  18,  18,  15,   1,  20,   0,   0, 0x00 },
     {     0, 0x7387,  19,  19,  16,   0,  20,   0,   0, 0x00 },
     {   190, 0x7535,  16,  20,  16,   3,  20,   0,   0, 0x00 },
     {     0, 0x7EBF,  20,  19,  16,   0,  20,   0,   0, 0x00 }
@@ -60,6 +62,6 @@ touchgfx::GeneratedFont& getFont_STSONG_TTF_20_4bpp();
 
 touchgfx::GeneratedFont& getFont_STSONG_TTF_20_4bpp()
 {
-    static touchgfx::GeneratedFont STSONG_TTF_20_4bpp(glyphs_STSONG_TTF_20_4bpp, 19, 20, 4, 4, 1, 0, 1, unicodes_STSONG_TTF_20_4bpp, kerning_STSONG_TTF_20_4bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont STSONG_TTF_20_4bpp(glyphs_STSONG_TTF_20_4bpp, 21, 20, 4, 4, 1, 0, 1, unicodes_STSONG_TTF_20_4bpp, kerning_STSONG_TTF_20_4bpp, 63, 0, 0);
     return STSONG_TTF_20_4bpp;
 }

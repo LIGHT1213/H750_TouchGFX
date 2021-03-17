@@ -49,6 +49,15 @@ MainViewBase::MainViewBase() :
     HeartRateNum.setValue(60);
     container1.add(HeartRateNum);
 
+    stepNum.setXY(249, 221);
+    stepNum.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    stepNum.setLinespacing(0);
+    Unicode::snprintf(stepNumBuffer, STEPNUM_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID16).getText());
+    stepNum.setWildcard(stepNumBuffer);
+    stepNum.resizeToCurrentText();
+    stepNum.setTypedText(touchgfx::TypedText(T_SINGLEUSEID15));
+    container1.add(stepNum);
+
     textArea1.setXY(99, 34);
     textArea1.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
     textArea1.setLinespacing(0);
@@ -79,6 +88,11 @@ MainViewBase::MainViewBase() :
     HeartRateText.resizeToCurrentText();
     HeartRateText.setTypedText(touchgfx::TypedText(T_SINGLEUSEID12));
 
+    testArea3.setXY(190, 221);
+    testArea3.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    testArea3.setLinespacing(0);
+    testArea3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID14));
+
     add(__background);
     add(container1);
     add(textArea1);
@@ -86,6 +100,7 @@ MainViewBase::MainViewBase() :
     add(button1);
     add(TemNumText);
     add(HeartRateText);
+    add(testArea3);
 }
 
 void MainViewBase::setupScreen()

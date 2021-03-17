@@ -44,6 +44,12 @@ void MainView::UpDateTemNum(float i)
     TemNumText.invalidate();
 
 }
+void MainView::UpDateStepNum(int i)
+{
+    Unicode::snprintfFloat(stepNumBuffer,STEPNUM_SIZE,"%3.1f",float(i) );
+    stepNum.setWildcard(stepNumBuffer);
+    stepNum.invalidate();
+}
 void MainView::handleTickEvent()
 {
     if(NetRecFlag==1)

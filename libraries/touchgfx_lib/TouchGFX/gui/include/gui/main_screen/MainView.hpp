@@ -13,6 +13,7 @@ public:
     virtual void tearDownScreen();
     void UpDateHeartNum(int i);
     void UpDateTemNum(float i);
+    void UpDateStepNum(int i);
 protected:
     void handleTickEvent();
 };
