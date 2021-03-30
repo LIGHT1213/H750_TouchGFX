@@ -48,7 +48,7 @@ protected:
     /*
      * Wildcard Buffers
      */
-    static const uint16_t STEPNUM_SIZE = 10;
+    static const uint16_t STEPNUM_SIZE = 5;
     touchgfx::Unicode::UnicodeChar stepNumBuffer[STEPNUM_SIZE];
     static const uint16_t TEMNUMTEXT_SIZE = 5;
     touchgfx::Unicode::UnicodeChar TemNumTextBuffer[TEMNUMTEXT_SIZE];

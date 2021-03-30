@@ -17,6 +17,7 @@ public:
     virtual void UpDateHeartRateLine(int i) {}
     virtual void UpDateHeartNum(int i) {}
     virtual void UpDateTemNum(int i) {}
+    virtual void UpDateStepNum(int i) {}
 protected:
     Model* model;
 };

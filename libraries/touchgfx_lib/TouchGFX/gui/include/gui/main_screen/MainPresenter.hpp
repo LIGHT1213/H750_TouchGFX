@@ -28,6 +28,7 @@ public:
     virtual ~MainPresenter() {};
     virtual void UpDateHeartNum(int i);
     virtual void UpDateTemNum(int i);
+    virtual void UpDateStepNum(int i);
 private:
     MainPresenter();
 

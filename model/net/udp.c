@@ -16,7 +16,7 @@
 #include "netdb.h"
 #include "network.h"
 #define BUFSZ   1024
-int stepNum;
+int inStepNum;
 int ecgNum;
 float tempNum;
 int heartNum;
@@ -39,7 +39,7 @@ static void DataProcess(void)
 //    ecgNum=(recv_data[17]<<8)+recv_data[16];
 //    tempNum=(recv_data[22]<<8)+recv_data[21];
 //    heartNum=recv_data[20];
-    stepNum=(recv_data[1]<<8)+recv_data[0];
+    inStepNum=(recv_data[1]<<8)+recv_data[0];
     ecgNum=(recv_data[3]<<8)+recv_data[2];
     heartNum=recv_data[4];
     tempNum=(recv_data[6]<<8)+recv_data[5];

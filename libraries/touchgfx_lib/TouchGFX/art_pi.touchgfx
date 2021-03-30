@@ -117,12 +117,12 @@
                 "Wildcard1": {
                   "TextId": "SingleUseId16",
                   "UseBuffer": true,
-                  "BufferSize": 10
+                  "BufferSize": 5
                 },
                 "Name": "stepNum",
                 "X": 249,
                 "Y": 221,
-                "Width": 10,
+                "Width": 28,
                 "Height": 27,
                 "Visible": true,
                 "LockPosition": false,
@@ -342,8 +342,8 @@
                 "Type": "DynamicGraph",
                 "DataSeed": 1780649875,
                 "NumberOfValues": 136,
-                "MaxY": 25000.0,
-                "MinY": 10000.0,
+                "MaxY": 300.0,
+                "MinY": 0.0,
                 "Precision": "1",
                 "UseCustomVisibleDataPointRange": false,
                 "FirstIndex": 0,

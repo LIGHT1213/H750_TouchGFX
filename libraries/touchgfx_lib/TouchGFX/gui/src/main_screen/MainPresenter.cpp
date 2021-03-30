@@ -23,3 +23,7 @@ void MainPresenter::UpDateTemNum(int i)
 {
     view.UpDateTemNum(i);
 }
+void MainPresenter::UpDateStepNum(int i)
+{
+    view.UpDateStepNum(i);
+}

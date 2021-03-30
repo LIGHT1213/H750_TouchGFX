@@ -4,7 +4,7 @@
 #include <stdlib.h>
 extern char *recv_data;
 extern uint8_t NetRecFlag;
-extern int stepNum;
+extern int inStepNum;
 extern int ecgNum;
 extern float tempNum;
 extern int heartNum;
@@ -46,7 +46,8 @@ void MainView::UpDateTemNum(float i)
 }
 void MainView::UpDateStepNum(int i)
 {
-    Unicode::snprintfFloat(stepNumBuffer,STEPNUM_SIZE,"%3.1f",float(i) );
+    //Unicode::snprintfFloat(stepNumBuffer,STEPNUM_SIZE,"%d",i );
+    Unicode::snprintf(stepNumBuffer, STEPNUM_SIZE, "%d",i);
     stepNum.setWildcard(stepNumBuffer);
     stepNum.invalidate();
 }
@@ -56,6 +57,7 @@ void MainView::handleTickEvent()
     {
         MainView::UpDateHeartNum((int)heartNum);
         MainView::UpDateTemNum(tempNum);
+        MainView::UpDateStepNum((int)inStepNum);
 //    modelListener->UpDateHeartRateLine((int)recv_data[0]);
 //    modelListener->UpDateHeartNum((int)recv_data[0]);
 //    modelListener->UpDateTemNum((int)recv_data[0]);
