@@ -9,7 +9,7 @@
 #include <gui/heartline_screen/HeartLinePresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/containers/CacheableContainer.hpp>
-#include <touchgfx/widgets/graph/GraphScroll.hpp>
+#include <touchgfx/widgets/graph/GraphWrapAndOverwrite.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
@@ -34,7 +34,7 @@ protected:
     touchgfx::Box __background;
     touchgfx::CacheableContainer container1;
     touchgfx::Box box1;
-    touchgfx::GraphScroll<136> HeartRateLine;
+    touchgfx::GraphWrapAndOverwrite<136> HeartRateLine;
     touchgfx::GraphElementLine HeartRateLineLine1;
     touchgfx::PainterRGB565 HeartRateLineLine1Painter;
     touchgfx::TextArea textArea1;

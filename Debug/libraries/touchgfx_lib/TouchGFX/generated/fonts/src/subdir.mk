@@ -14,6 +14,7 @@ CPP_SRCS += \
 ../libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_13.cpp \
 ../libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_14.cpp \
 ../libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_15.cpp \
+../libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_17.cpp \
 ../libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_9.cpp \
 ../libraries/touchgfx_lib/TouchGFX/generated/fonts/src/GeneratedFont.cpp \
 ../libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Kerning_NotoSans_Regular_20_4bpp.cpp \
@@ -33,6 +34,7 @@ OBJS += \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_13.o \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_14.o \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_15.o \
+./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_17.o \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_9.o \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/GeneratedFont.o \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Kerning_NotoSans_Regular_20_4bpp.o \
@@ -52,6 +54,7 @@ CPP_DEPS += \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_13.d \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_14.d \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_15.d \
+./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_17.d \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Font_STSONG_TTF_20_4bpp_9.d \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/GeneratedFont.d \
 ./libraries/touchgfx_lib/TouchGFX/generated/fonts/src/Kerning_NotoSans_Regular_20_4bpp.d \

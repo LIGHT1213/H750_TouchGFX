@@ -38,18 +38,22 @@ protected:
     touchgfx::CircleProgress HeartRateNum;
     touchgfx::PainterRGB565Bitmap HeartRateNumPainter;
     touchgfx::TextAreaWithOneWildcard stepNum;
+    touchgfx::TextAreaWithOneWildcard stepLenth;
     touchgfx::TextArea textArea1;
     touchgfx::TextArea textArea2;
     touchgfx::Button button1;
     touchgfx::TextAreaWithOneWildcard TemNumText;
     touchgfx::TextAreaWithOneWildcard HeartRateText;
     touchgfx::TextArea testArea3;
+    touchgfx::TextArea textArea4;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t STEPNUM_SIZE = 5;
     touchgfx::Unicode::UnicodeChar stepNumBuffer[STEPNUM_SIZE];
+    static const uint16_t STEPLENTH_SIZE = 5;
+    touchgfx::Unicode::UnicodeChar stepLenthBuffer[STEPLENTH_SIZE];
     static const uint16_t TEMNUMTEXT_SIZE = 5;
     touchgfx::Unicode::UnicodeChar TemNumTextBuffer[TEMNUMTEXT_SIZE];
     static const uint16_t HEARTRATETEXT_SIZE = 5;

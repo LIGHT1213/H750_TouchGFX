@@ -47,14 +47,20 @@ void MainView::UpDateTemNum(float i)
 void MainView::UpDateStepNum(int i)
 {
     //Unicode::snprintfFloat(stepNumBuffer,STEPNUM_SIZE,"%d",i );
+    float StepLenth=i*1.5;
+    i=i-1;
     Unicode::snprintf(stepNumBuffer, STEPNUM_SIZE, "%d",i);
+    Unicode::snprintfFloat(stepLenthBuffer, STEPLENTH_SIZE, "%3.1f",StepLenth);
+    stepLenth.setWildcard(stepLenthBuffer);
     stepNum.setWildcard(stepNumBuffer);
     stepNum.invalidate();
+    stepLenth.invalidate();
 }
 void MainView::handleTickEvent()
 {
     if(NetRecFlag==1)
     {
+
         MainView::UpDateHeartNum((int)heartNum);
         MainView::UpDateTemNum(tempNum);
         MainView::UpDateStepNum((int)inStepNum);

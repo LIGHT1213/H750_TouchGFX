@@ -28,6 +28,8 @@ void HeartLineView::handleTickEvent()
 {
     if(NetRecFlag==1)
     {
+        if(ecgNum>500)
+            ecgNum=500;
         HeartLineView::UpDateHeartRateLine((int)ecgNum);
         NetRecFlag=0;
     }

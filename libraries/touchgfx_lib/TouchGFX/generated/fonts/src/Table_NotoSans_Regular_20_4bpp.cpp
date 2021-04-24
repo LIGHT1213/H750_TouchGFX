@@ -5,7 +5,9 @@
 FONT_TABLE_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::GlyphNode glyphs_NotoSans_Regular_20_4bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE =
 {
-    {     0, 0x003F,   9,  14,  14,   0,   9,   0,   0, 0x00 }
+    {     0, 0x0032,  11,  14,  14,   0,  11,   0,   0, 0x00 },
+    {    84, 0x0035,  10,  14,  14,   1,  11,   0,   0, 0x00 },
+    {   154, 0x003F,   9,  14,  14,   0,   9,   0,   0, 0x00 }
 };
 
 // NotoSans_Regular_20_4bpp
@@ -21,6 +23,6 @@ touchgfx::GeneratedFont& getFont_NotoSans_Regular_20_4bpp();
 
 touchgfx::GeneratedFont& getFont_NotoSans_Regular_20_4bpp()
 {
-    static touchgfx::GeneratedFont NotoSans_Regular_20_4bpp(glyphs_NotoSans_Regular_20_4bpp, 1, 20, 0, 4, 1, 0, 0, unicodes_NotoSans_Regular_20_4bpp, kerning_NotoSans_Regular_20_4bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont NotoSans_Regular_20_4bpp(glyphs_NotoSans_Regular_20_4bpp, 3, 20, 0, 4, 1, 0, 0, unicodes_NotoSans_Regular_20_4bpp, kerning_NotoSans_Regular_20_4bpp, 63, 0, 0);
     return NotoSans_Regular_20_4bpp;
 }

@@ -120,8 +120,37 @@
                   "BufferSize": 5
                 },
                 "Name": "stepNum",
-                "X": 249,
-                "Y": 221,
+                "X": 259,
+                "Y": 194,
+                "Width": 28,
+                "Height": 27,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              },
+              {
+                "Type": "TextArea",
+                "TextId": "SingleUseId18",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "Alpha": 255,
+                "AutoSize": true,
+                "LineSpacing": 0,
+                "Wildcard1": {
+                  "TextId": "SingleUseId19",
+                  "UseBuffer": true,
+                  "BufferSize": 5
+                },
+                "Name": "stepLenth",
+                "X": 256,
+                "Y": 235,
                 "Width": 28,
                 "Height": 27,
                 "Visible": true,
@@ -282,8 +311,32 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Name": "testArea3",
-            "X": 190,
-            "Y": 221,
+            "X": 171,
+            "Y": 195,
+            "Width": 40,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId17",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea4",
+            "X": 168,
+            "Y": 235,
             "Width": 40,
             "Height": 27,
             "Visible": true,
@@ -342,7 +395,7 @@
                 "Type": "DynamicGraph",
                 "DataSeed": 1780649875,
                 "NumberOfValues": 136,
-                "MaxY": 300.0,
+                "MaxY": 500.0,
                 "MinY": 0.0,
                 "Precision": "1",
                 "UseCustomVisibleDataPointRange": false,
@@ -361,7 +414,7 @@
                 "PaddingBottom": 0,
                 "PaddingLeft": 0,
                 "PaddingRight": 0,
-                "GraphType": "GraphScroll",
+                "GraphType": "GraphWrapOverwrite",
                 "GraphDrawers": [
                   {
                     "Type": "LineDrawer",
@@ -531,6 +584,18 @@
       },
       {
         "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
         "IsResource": false
       }
     ],

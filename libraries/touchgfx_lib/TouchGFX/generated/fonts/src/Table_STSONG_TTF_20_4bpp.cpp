@@ -25,7 +25,9 @@ KEEP extern const touchgfx::GlyphNode glyphs_STSONG_TTF_20_4bpp[] FONT_TABLE_LOC
     {   190, 0x6E29,  18,  18,  15,   1,  20,   0,   0, 0x00 },
     {     0, 0x7387,  19,  19,  16,   0,  20,   0,   0, 0x00 },
     {   190, 0x7535,  16,  20,  16,   3,  20,   0,   0, 0x00 },
-    {     0, 0x7EBF,  20,  19,  16,   0,  20,   0,   0, 0x00 }
+    {     0, 0x79BB,  19,  19,  16,   1,  20,   0,   0, 0x00 },
+    {   190, 0x7EBF,  20,  19,  16,   0,  20,   0,   0, 0x00 },
+    {     0, 0x8DDD,  19,  18,  15,   0,  20,   0,   0, 0x00 }
 };
 
 // STSONG_TTF_20_4bpp
@@ -37,6 +39,7 @@ extern const uint8_t unicodes_STSONG_TTF_20_4bpp_12[];
 extern const uint8_t unicodes_STSONG_TTF_20_4bpp_13[];
 extern const uint8_t unicodes_STSONG_TTF_20_4bpp_14[];
 extern const uint8_t unicodes_STSONG_TTF_20_4bpp_15[];
+extern const uint8_t unicodes_STSONG_TTF_20_4bpp_17[];
 extern const uint8_t* const unicodes_STSONG_TTF_20_4bpp[] =
 {
     unicodes_STSONG_TTF_20_4bpp_0,
@@ -54,7 +57,9 @@ extern const uint8_t* const unicodes_STSONG_TTF_20_4bpp[] =
     unicodes_STSONG_TTF_20_4bpp_12,
     unicodes_STSONG_TTF_20_4bpp_13,
     unicodes_STSONG_TTF_20_4bpp_14,
-    unicodes_STSONG_TTF_20_4bpp_15
+    unicodes_STSONG_TTF_20_4bpp_15,
+    0,
+    unicodes_STSONG_TTF_20_4bpp_17
 };
 extern const touchgfx::KerningNode kerning_STSONG_TTF_20_4bpp[];
 
@@ -62,6 +67,6 @@ touchgfx::GeneratedFont& getFont_STSONG_TTF_20_4bpp();
 
 touchgfx::GeneratedFont& getFont_STSONG_TTF_20_4bpp()
 {
-    static touchgfx::GeneratedFont STSONG_TTF_20_4bpp(glyphs_STSONG_TTF_20_4bpp, 21, 20, 4, 4, 1, 0, 1, unicodes_STSONG_TTF_20_4bpp, kerning_STSONG_TTF_20_4bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont STSONG_TTF_20_4bpp(glyphs_STSONG_TTF_20_4bpp, 23, 20, 4, 4, 1, 0, 1, unicodes_STSONG_TTF_20_4bpp, kerning_STSONG_TTF_20_4bpp, 63, 0, 0);
     return STSONG_TTF_20_4bpp;
 }
